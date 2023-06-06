@@ -14,12 +14,12 @@ sesi_file = 'Finnkent'
 
 bot_id = '.'
 
-Masak = 'Bbet 1+22'
+Masak = 'Bbet 1+21'
 
 acak = (
-'1+22',
-'1+22',
-'1+22',
+'3+21',
+'2+21',
+'1+21',
 )
 
 judi = 0
@@ -51,7 +51,7 @@ with TelegramClient(sesi_file, api_id, api_hash) as client:
         
         elif "🎰 Finns telah bertaruh" in pesan:
             print(time.asctime(), pesan)
-            await bentar(600)
+            await bentar(5)
             await client.send_message(-1001944528171, "Bbet "+str(random.choice(acak)))
             return
           
