@@ -14,12 +14,12 @@ sesi_file = 'Finnkent'
 
 bot_id = '.'
 
-Masak = 'Bbet 1+21'
+Masak = 'Bbet 1+22'
 
 acak = (
-'3+21',
-'2+21',
-'1+21',
+'3+22',
+'2+22',
+'1+22',
 )
 
 judi = 0
