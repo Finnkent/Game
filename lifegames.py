@@ -45,17 +45,20 @@ with TelegramClient(sesi_file, api_id, api_hash) as client:
             await client.send_message(-1001944528171, Masak)
             return
           
-        if not from_.bot and 'cuan' in pesan or 'Cuan' in pesan:
+       
+        if "🎰 Finns telah bertaruh" in pesan:
+            print(time.asctime(), pesan)
+            await bentar(5)
+            await client.send_message(-1001944528171, "Bbet "+str(random.choice(acak)))
+            return
+
+
+        elif not from_.bot and 'cuan' in pesan or 'Cuan' in pesan:
             print(time.asctime(), pesan)
             await bentar(2)
             await event.reply('0pay *')
             return
         
-        elif "🎰 Finns telah bertaruh" in pesan:
-            print(time.asctime(), pesan)
-            await bentar(5)
-            await client.send_message(-1001944528171, "Bbet "+str(random.choice(acak)))
-            return
           
                 
     client.start() 
