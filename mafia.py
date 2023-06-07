@@ -60,7 +60,7 @@ with TelegramClient(sesi_file, api_id, api_hash) as client:
             return
 
         
-    @client.on(events.NewMessage(chats=1330532042))
+    @client.on(events.NewMessage(chats=1732562133))
     async def handler(event):
         pesan = event.raw_text
         
