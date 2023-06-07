@@ -14,14 +14,10 @@ sesi_file = 'Finnkent'
 
 bot_id = '.'
 
-Masak = 'Bbet 1+22'
+bet = 'Bbet 1+22'
 
 acak = (
 '1+22',
-'2+22',
-'3+22',
-'4+22',
-'5+22',
 )
 
 judi = 0
@@ -30,7 +26,7 @@ async def bentar(w):
     await asyncio.sleep(w)
     
 with TelegramClient(sesi_file, api_id, api_hash) as client:
-    client.loop.run_until_complete(client.send_message(-1001944528171 , Masak))
+    client.loop.run_until_complete(client.send_message(-1001944528171 , bet))
     
     @client.on(events.NewMessage(chats=-1001944528171))
     async def handler(event):
@@ -42,15 +38,15 @@ with TelegramClient(sesi_file, api_id, api_hash) as client:
         if "🚓 Finns sepertinya kamu mencoba melanggar hukum.." in pesan:
             print(time.asctime(), pesan)
             await bentar(600)
-            await client.send_message(-1001944528171, Masak)
+            await client.send_message(-1001944528171, bet)
             return
           
        
-        #if "🎰 Finns telah bertaruh" in pesan:
-            #print(time.asctime(), pesan)
-            #await bentar(5)
-            #await client.send_message(-1001944528171, "Bbet "+str(random.choice(acak)))
-            #return
+        if "🎰 Finns telah bertaruh" in pesan:
+            print(time.asctime(), pesan)
+            await bentar(10)
+            await client.send_message(-1001944528171, "Bbet "+str(random.choice(acak)))
+            return
 
 
         if not from_.bot and 'cuan' in pesan or 'Cuan' in pesan:
