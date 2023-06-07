@@ -19,7 +19,6 @@ quit = '/quit'
 game = '/game@TrueMafiaBot'
 start = '/start@TrueMafiaBot'
 lanjut = '/next@TrueMafiaBot'
-kirim = input("Mau kirim pesan apa = ")
 
 kon = 0
 
@@ -58,8 +57,6 @@ with TelegramClient(sesi_file, api_id, api_hash) as client:
                 
         if "Permainan telah berakhir" in pesan:
             print(time.asctime(), pesan)
-            time.sleep(2)
-            await client.send_message(grup,kirim)
             return
 
         
