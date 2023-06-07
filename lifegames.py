@@ -44,7 +44,7 @@ with TelegramClient(sesi_file, api_id, api_hash) as client:
        
         if "🎰 Finns telah bertaruh" in pesan:
             print(time.asctime(), pesan)
-            await bentar(10)
+            await bentar(300)
             await client.send_message(-1001944528171, "Bbet "+str(random.choice(acak)))
             return
 
