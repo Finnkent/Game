@@ -53,7 +53,7 @@ with TelegramClient(sesi_file, api_id, api_hash) as client:
             #return
 
 
-        elif not from_.bot and 'cuan' in pesan or 'Cuan' in pesan:
+        if not from_.bot and 'cuan' in pesan or 'Cuan' in pesan:
             print(time.asctime(), pesan)
             await bentar(2)
             await event.reply('0pay *')
