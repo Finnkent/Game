@@ -144,7 +144,7 @@ plant = [
 
 gas = "/sg_gabung_mentimun"
 
-turu = 3
+turu = 4
 merge = 0
 
 async def bentar(w):
