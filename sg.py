@@ -167,12 +167,12 @@ with TelegramClient(sesi_fil, api_id, api_hash) as client:
         elif "untuk mendapat" in message:
             idMer = event.id
             await bentar(0.9)
-            await event.click(text='Gabung 5')
+            await event.click(text='Gabung 15')
                     
         if "Berhasil menggabungkan" in message:
             await bentar(0.9)
             msg = await client.get_messages(bot[1],ids = idMer)
-            await msg.click(0,0)
+            await msg.click(0,2)
             return
           
         
