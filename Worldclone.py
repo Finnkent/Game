@@ -23,23 +23,11 @@ with TelegramClient(sesi_file, api_id, api_hash) as client:
             await Doo.click(text='KumpulkanSampah')        
             return
         
-        if "Kamu mencari sampah menggunakan Jala" in event.raw_text:
+        if "Kamu mencari sampah" in event.raw_text:
             Doo = await client.get_messages('KampungMaifamBot', ids=event.message.id)
             time.sleep(33.1)
             await Doo.click(text='KumpulkanSampah')        
-            return
-          
-        if "Kamu mencari sampah menggunakan Pancing" in event.raw_text:
-            Doo = await client.get_messages('KampungMaifamBot', ids=event.message.id)
-            time.sleep(16.1)
-            await Doo.click(text='KumpulkanSampah')        
-            return
-          
-        if "Kamu mencari sampah menggunakan Tongkat" in event.raw_text:
-            Doo = await client.get_messages('KampungMaifamBot', ids=event.message.id)
-            time.sleep(5.1)
-            await Doo.click(text='KumpulkanSampah')        
-            return
+            return
             
             
         if "Energi tidak" in event.raw_text:
