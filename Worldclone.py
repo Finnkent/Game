@@ -46,7 +46,7 @@ with TelegramClient(sesi_file, api_id, api_hash) as client:
             Doo = await client.get_messages('KampungMaifamBot', ids=event.message.id)
             time.sleep(2)
             await event.respond('/wo2023_restore')        
-            time.sleep(5)
+            time.sleep(10)
             await event.respond('/wo2023_restore_AirKelapa')        
             return
             
