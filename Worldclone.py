@@ -49,6 +49,13 @@ with TelegramClient(sesi_file, api_id, api_hash) as client:
             time.sleep(10)
             await event.respond('/wo2023_restore_AirKelapa')        
             return
+
+        if "🥥 wo2023_restore_AirKelapa (+300) 0" in event.raw_text:
+            Doo = await client.get_messages('KampungMaifamBot', ids=event.message.id)
+            time.sleep(2)
+            await event.respond('/wo2023_restore_AirPutih')        
+            return
+
             
         if "Kamu meminum" in event.raw_text:
             time.sleep(2)
