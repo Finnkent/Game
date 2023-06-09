@@ -19,7 +19,7 @@ with TelegramClient(sesi_file, api_id, api_hash) as client:
     	
         if "Lepaskan alat yang" in event.raw_text:
             Doo = await client.get_messages('KampungMaifamX4Bot', ids=event.message.id)
-            time.sleep(31)
+            time.sleep(2)
             await Doo.click(text='KumpulkanSampah')        
             return
         
