@@ -6,7 +6,7 @@ loop = asyncio.get_event_loop()
 
 api_id = 18850178
 api_hash = '34d2d64d0bb5827789bc7bf7c0d34b69'
-client = TelegramClient('Kin', api_id, api_hash).start()
+client = TelegramClient('Lado', api_id, api_hash).start()
 
 total = 0
 
