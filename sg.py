@@ -181,6 +181,14 @@ with TelegramClient(sesi_fil, api_id, api_hash) as client:
             await bentar(turu)
             
             if merge %5 == 0 :
+                await client.send_message(bot[3], hasil)
+                await bentar(turu)
+                await client.send_message(bot[3], judi+str(random.randint(1,2))+"_2e12")
+                await bentar(turu)
+                await client.send_message(bot[3], ternak)
+                await bentar(turu)
+                await client.send_message(bot[3], makan)
+                await bentar(turu)
                 await client.send_message(bot[3], "/pfs_AreaClassE_ambilpanen")
                 await bentar(turu)
                 await client.send_message(bot[3], "/pfs_AreaClassD_ambilpanen")
