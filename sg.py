@@ -185,7 +185,7 @@ with TelegramClient(sesi_fil, api_id, api_hash) as client:
             merge +=1
             await bentar(turu)
             
-            if merge %5 == 0 :
+            if merge %6 == 0 :
                 await client.send_message(bot[3], hasil)
                 await bentar(turu)
                 await client.send_message(bot[3], judi+str(random.randint(1,2))+"_25e10")
