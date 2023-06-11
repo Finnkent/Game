@@ -6,10 +6,10 @@ from telethon import TelegramClient, events, utils, Button
 
 api_id = 18850178 
 api_hash = '34d2d64d0bb5827789bc7bf7c0d34b69'
-sesi_file = 'Rahma'
+sesi_file = input("Mau akun mana = ")
 
 dest = 'KampungMaifamXBot'
-Ternak = '/pelihara_BayiBabi_85'
+Ternak = /pelihara_BayiRusa_127
 #restore = '/restore'
 restore = '/restore_max_confirm'
  
