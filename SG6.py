@@ -105,7 +105,7 @@ with TelegramClient(sesi_file, api_id, api_hash) as client:
             return
         if '15 untuk mendapat 5' in event.raw_text:
             time.sleep(1.5)
-            await event.click(text='Gabung 500')
+            await event.click(text='Gabung 15')
             return
         if 'Berhasil menggabungkan' in event.raw_text:
             c.append(15)
