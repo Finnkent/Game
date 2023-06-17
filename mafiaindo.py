@@ -19,7 +19,7 @@ quit = '/quit'
 game = '/game@TrueMafiaBot'
 start = '/start@TrueMafiaBot'
 lanjut = '/next@TrueMafiaBot'
-kirim = 'Hadir 🙌'
+kirim = 'Turu'
 
 kon = 0
 
