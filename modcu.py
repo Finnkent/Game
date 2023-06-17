@@ -58,7 +58,6 @@ with TelegramClient(sesi_file, api_id, api_hash) as client:
                 
         if "Permainan telah berakhir" in pesan:
             print(time.asctime(), pesan)
-            time.sleep(5)
             await client.send_message(grup,mese)
             return
 
