@@ -246,7 +246,7 @@ with TelegramClient(sesi_fil, api_id, api_hash) as client:
         global idMer
             
             
-        if "Gabungkan 500" in message:
+        if "Gabungkan 1000" in message:
             idMer = event.id
             await bentar(0.9)
             await event.click(text='Gabung 500')
