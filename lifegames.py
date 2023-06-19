@@ -14,12 +14,12 @@ sesi_file = 'Finnkent'
 
 bot_id = '.'
 
-bet = 'Bbet 69696969696969696969696969'
+bet = 'Bbet 1+28'
 
 acak = (
-'69696969696969696969696969',
-'96969696969696969696969696',
-'66996699669966996699669966',
+'5+28',
+'4+28',
+'3+28',
 )
 
 
@@ -45,11 +45,11 @@ with TelegramClient(sesi_file, api_id, api_hash) as client:
             return
           
        
-        #if "🎰 Finns telah bertaruh" in pesan:
-            #print(time.asctime(), pesan)
-            #await bentar(1)
-            #await client.send_message(-1001944528171, "Bbet "+str(random.choice(acak)))
-            #return
+        if "🎰 📸 Finns [𝐒𝐕𝐇𝟑𝟏]ᴰ¹ #EcoleDeMode telah bertaruh" in pesan:
+            print(time.asctime(), pesan)
+            await bentar(1.5)
+            await client.send_message(-1001944528171, "Bbet "+str(random.choice(acak)))
+            return
 
 
         if not from_.bot and 'cuan' in pesan or 'Cuan' in pesan:
