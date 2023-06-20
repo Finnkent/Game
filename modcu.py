@@ -12,20 +12,6 @@ api_id = 18850178
 api_hash = '34d2d64d0bb5827789bc7bf7c0d34b69'
 sesi_file = input("Mau akun mana = ")
 
-mese = f"""
-\n modcu 
-
-@kentutlalat
-@origyu
-@jjaeggyu
-@lovvnilla
-@Lunaaaurr
-@breadnee
-@Jikjind
-@soft_kyu
-@na_mahen
-@gia4no"""
-
 grup = 'mapiamodcuu'
 bot_id = 'TrueMafiaBot'
 lanjut = '/next@TrueMafiaBot'
@@ -71,7 +57,6 @@ with TelegramClient(sesi_file, api_id, api_hash) as client:
                 
         if "Permainan telah berakhir" in pesan:
             print(time.asctime(), pesan)
-            await client.send_message(grup,mese)
             return
 
         
