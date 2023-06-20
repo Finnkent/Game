@@ -27,14 +27,14 @@ mese = f"""
 @gia4no"""
 
 with TelegramClient(sesi_file, api_id, api_hash) as client:
-    client.loop.run_until_complete(client.send_message(grup , mese))
+    client.loop.run_until_complete(client.send_message(-1001657805800 , mese))
     @client.on(events.NewMessage(chats=-1001657805800))
     async def handle_chat(event):
         pesan = event.raw_text
         
         if "Tim pemenang: Polos" in pesan:
             time.sleep(2)
-            await client.send_message(grup, mese)
+            await client.send_message(-1001657805800, mese)
             print(time.asctime(), 'Tag orang')
             return
     
