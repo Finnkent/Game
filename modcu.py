@@ -19,7 +19,8 @@ mese = f"""
 @origyu
 @jjaeggyu
 @lovvnilla
-@Lunaaaurr"""
+@Lunaaaurr
+@breadnee"""
 
 grup = 'mapiamodcuu'
 bot_id = 'TrueMafiaBot'
