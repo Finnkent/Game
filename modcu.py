@@ -12,7 +12,8 @@ api_id = 18850178
 api_hash = '34d2d64d0bb5827789bc7bf7c0d34b69'
 sesi_file = input("Mau akun mana = ")
 
-mese = f"""\n modcu 
+mese = f"""
+\n modcu 
 
 @kentutlalat
 @origyu
