@@ -23,7 +23,8 @@ mese = f"""
 @breadnee
 @Jikjind
 @soft_kyu
-@na_mahen"""
+@na_mahen
+@gia4no"""
 
 grup = 'mapiamodcuu'
 bot_id = 'TrueMafiaBot'
