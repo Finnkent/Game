@@ -1,4 +1,4 @@
-import time, os
+koimport time, os
 import asyncio
 import sys, re
 import random
@@ -19,7 +19,7 @@ mese = f"""
 @origyu
 @jjaeggyu
 @lovvnilla
-@Keziaur"""
+@Lunaaaurr"""
 
 grup = 'mapiamodcuu'
 bot_id = 'TrueMafiaBot'
