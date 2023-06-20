@@ -20,7 +20,8 @@ mese = f"""
 @jjaeggyu
 @lovvnilla
 @Lunaaaurr
-@breadnee"""
+@breadnee
+@Jikjind"""
 
 grup = 'mapiamodcuu'
 bot_id = 'TrueMafiaBot'
