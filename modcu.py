@@ -19,7 +19,7 @@ quit = '/quit'
 game = '/game@TrueMafiaBot'
 start = '/start@TrueMafiaBot'
 lanjut = '/next@TrueMafiaBot'
-mese = '.'
+mese = input("kirim pesan apa =")
 
 kon = 0
 
