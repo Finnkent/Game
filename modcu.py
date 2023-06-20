@@ -1,4 +1,4 @@
-koimport time, os
+import time, os
 import asyncio
 import sys, re
 import random
