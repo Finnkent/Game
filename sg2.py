@@ -156,18 +156,22 @@ with TelegramClient(sesi_fil, api_id, api_hash) as client:
             if int(d) <= 5 or int(d) < 10:
                 await msg.click(text="Gabung 5")
                 return
-            elif int(d) <= 9 or int(d) < 15:
+            elif int(d) <= 10 or int(d) < 15:
                 await msg.click(text="Gabung 10")
                 return
-            elif int(d) <= 14 or int(d) < 500:
+            elif int(d) <= 15 or int(d) < 500:
                 await msg.click(text="Gabung 15")
                 return
-            elif int(d) <= 499 or int(d) < 1000:
+            elif int(d) <= 500 or int(d) < 1000:
                 await msg.click(text="Gabung 500")
                 return
-            elif int(d) >= 1000:
+            elif int(d) <= 1000 or int(d) < 1500:
                 await msg.click(text="Gabung 1000")
+                return
+            elif int(d) >= 1500:
+                await msg.click(text="Gabung 1500")
             return
+
 
         if 'Berhasil menggabungkan' in pesan:
             idMer = event.id
