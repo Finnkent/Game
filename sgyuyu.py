@@ -223,7 +223,7 @@ plant = [
 ]
 
 hasil = "/casino_hasil"
-judi = "/casino_SuperLuck_"
+judi = "/casino_FiftyFifty_"
 
 ternak = "/ambilHasil"
 makan = "/beriMakan"
@@ -267,7 +267,7 @@ with TelegramClient(sesi_fil, api_id, api_hash) as client:
             if merge %5 == 0 :
                 await client.send_message(bot[3], hasil)
                 await bentar(turu)
-                await client.send_message(bot[3], judi+str(random.randint(1,2))+"_2e12")
+                await client.send_message(bot[3], judi+str(random.randint(1,2))+"_1e12")
                 await bentar(turu)
                 await client.send_message(bot[3], ternak)
                 await bentar(turu)
