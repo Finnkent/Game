@@ -266,7 +266,7 @@ plant = [
 
 
 hasil = "/casino_hasil"
-judi = "/casino_FiftyFifty_
+judi = "/casino_FiftyFifty_"
 
 ternak = "/ambilHasil"
 makan = "/beriMakan"
