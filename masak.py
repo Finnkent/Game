@@ -22,7 +22,7 @@ with TelegramClient(sesi_file, api_id, api_hash) as client:
         pesan = event.raw_text
         
         if "Berhasil memasak" in pesan:
-            time.sleep(2)
+            time.sleep(3)
             await event.respond(Casino)
             print(pesan)
             return
@@ -32,25 +32,25 @@ with TelegramClient(sesi_file, api_id, api_hash) as client:
             return
           
         elif "Kamu tidak memiliki" in pesan:
-            time.sleep(2)
+            time.sleep(3)
             await event.respond('/restore')
             print(pesan)
             return
         
         elif "Energi berhasil" in pesan:
-            time.sleep(2)
+            time.sleep(3)
             await event.respond(Casino)
             print(pesan)
             return
         
         elif "Kamu tidak bisa memasak" in pesan:
-            time.sleep(2)
+            time.sleep(3)
             await event.respond('/levelupGuild')
             print(time.asctime(), 'Level up')
             return
           
         #elif "Guildmu sekarang adalah" in pesan:
-            #time.sleep(2)
+            #time.sleep(3)
             #await client.forward_messages(ch, event.message)
             #time.sleep(tunggu)
             #await event.respond(Casino)
