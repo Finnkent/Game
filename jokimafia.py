@@ -12,7 +12,7 @@ api_id = 18850178
 api_hash = '34d2d64d0bb5827789bc7bf7c0d34b69'
 sesi_file = input("Mau akun mana = ")
 
-grup = 'mafiamodcuuu'
+grup = -1001838060871
 bot_id = 'TrueMafiaBot'
 lanjut = '/next@TrueMafiaBot'
 quit = '/quit'
@@ -26,7 +26,7 @@ async def bentar(w):
     await asyncio.sleep(w)
     
 with TelegramClient(sesi_file, api_id, api_hash) as client:
-    client.loop.run_until_complete(client.send_message(grup , lanjut))
+    client.loop.run_until_complete(client.send_message(-1001838060871 , lanjut))
     @client.on(events.NewMessage(incoming=True, from_users=bot_id))
     async def handle_chat(event):
         pesan = event.raw_text
@@ -34,7 +34,7 @@ with TelegramClient(sesi_file, api_id, api_hash) as client:
         
         if "Anda adalah 🤵🏻 Boss Lana" in pesan or "Anda adalah 🤵🏼 Mafia!" in pesan:
             time.sleep(5)
-            await client.send_message(grup,quit)
+            await client.send_message(-1001838060871,quit)
             print(time.asctime(), 'Quit')
             return
                 
@@ -45,13 +45,13 @@ with TelegramClient(sesi_file, api_id, api_hash) as client:
                 
         if "Anda adalah 👨🏼 Warga" in pesan:
             time.sleep(7)
-            await client.send_message(grup ,lanjut)
+            await client.send_message(-1001838060871 ,lanjut)
             print(time.asctime(), 'Next')
             return
               
         if "Anda keluar dari permainan" in pesan or "Permainan sudah dimulai..." in pesan:
             time.sleep(3)
-            await client.send_message(grup,lanjut)
+            await client.send_message(-1001838060871,lanjut)
             print(time.asctime(), 'Lanjut')
             return
                 
@@ -60,14 +60,14 @@ with TelegramClient(sesi_file, api_id, api_hash) as client:
             return
 
         
-    @client.on(events.NewMessage(chats=grup))
+    @client.on(events.NewMessage(chats=-1001838060871))
     async def handler(event):
         pesan = event.raw_text
         
         if "Jumlah minimum pemain - 4" in pesan or "Jika pemain 12 sedikit untuk" in pesan:
             print(time.asctime(), pesan)
             await bentar(2)
-            await client.send_message(grup, lanjut)
+            await client.send_message(-1001838060871, lanjut)
             return
           
         
