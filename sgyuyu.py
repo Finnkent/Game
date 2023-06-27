@@ -180,6 +180,21 @@ with TelegramClient(sesi_fil, api_id, api_hash) as client:
             await event.respond(mese)
             return
 
+    @client.on(events.NewMessage(from_users=bot[3]))
+    async def handle_chat(event):
+        message = event.raw_text
+        
+        if "Kamu tidak memiliki cukup energi" in message:
+            print(time.asctime(), 'Capek aseli')
+            await bentar(2)
+            await client.send_message(bot[3], "/makan_RotiBelanda")
+            
+        if "Tidak tidak" in message:
+            print(time.asctime(), 'Kenyang WOI!!!')
+            await bentar(2)
+            await client.send_message(bot[3], "/restore_max_confirm")
+           
+
     client.start()
     print(time.asctime(), '-', 'Mari menjadi petani')
     client.run_until_disconnected()
