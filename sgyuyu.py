@@ -12,259 +12,95 @@ api_id = 18850178
 api_hash = '34d2d64d0bb5827789bc7bf7c0d34b69'
 sesi_fil = 'Yuyu'
 
-bot = ['danaudalamhutan', 'KampungMaifamXBot', 'KampungMaifamX4Bot', 'KampungMaifamBot']
-
-plant = [
+mergeList = [
 'Mentimun',
-'MentimunE',
-'MentimunD',
-'MentimunC',
-'MentimunB',
-'Tomat',
-'TomatE',
-'TomatD',
-'TomatC',
-'TomatB',
-'Cabai',
-'CabaiE',
-'CabaiD',
-'CabaiC',
-'CabaiB',
-'Wortel',
-'WortelE',
-'WortelD',
-'WortelC',
-'WortelB',
-'Kentang',
-'KentangE',
-'KentangD',
-'KentangC',
-'KentangB',
-'Avokad',
-'AvokadE',
-'AvokadD',
-'AvokadC',
-'AvokadB',
-'Apel',
-'ApelE',
-'ApelD',
-'ApelC',
-'ApelB',
-'Pisang',
-'PisangE',
-'PisangD',
-'PisangC',
-'PisangB',
-'Jagung',
-'JagungE',
-'JagungD',
-'JagungC',
-'JagungB',
-'NanasKeramat',
-'NanasKeramatE',
-'NanasKeramatD',
-'NanasKeramatC',
-'NanasKeramatB',
-'Strawberry',
-'StrawberryE',
-'StrawberryD',
-'StrawberryC',
-'StrawberryB',
 'Anggur',
-'AnggurE',
-'AnggurD',
-'AnggurC',
-'AnggurB',
-'Lily',
-'LilyE',
-'LilyD',
-'LilyC',
-'LilyB',
-'Jeruk',
-'JerukE',
-'JerukD',
-'JerukC',
-'JerukB',
-'Nanas',
-'NanasE',
-'NanasD',
-'NanasC',
-'NanasB',
-'Semangka',
-'SemangkaE',
-'SemangkaD',
-'SemangkaC',
-'SemangkaB',
+'Apel',
+'Avokad',
 'BungaMatahari',
-'BungaMatahariE',
-'BungaMatahariD',
-'BungaMatahariC',
-'BungaMatahariB',
-'Sakura',
-'SakuraE',
-'SakuraD',
-'SakuraC',
-'SakuraB',
-'Melon',
-'MelonE',
-'MelonD',
-'MelonC',
-'MelonB',
-'Pepaya',
-'PepayaE',
-'PepayaD',
-'PepayaC',
-'PepayaB',
-'Jambu',
-'JambuE',
-'JambuD',
-'JambuC',
-'JambuB',
-'Nangka',
-'NangkaE',
-'NangkaD',
-'NangkaC',
-'NangkaB',
-'Terung',
-'TerungE',
-'TerungD',
-'TerungC',
-'TerungB',
-'Kelapa',
-'KelapaE',
-'KelapaD',
-'KelapaC',
-'KelapaB',
-'Ubi',
-'UbiE',
-'UbiD',
-'UbiC',
-'UbiB',
-'Tulip',
-'TulipE',
-'TulipD',
-'TulipC',
-'TulipB',
+'Cabai',
+'Jagung',
+'Jeruk',
+'Kentang',
+'Lily',
 'Mawar',
-'MawarE',
-'MawarD',
-'MawarC',
-'MawarB',
-'Pir',
-'PirE',
-'PirD',
-'PirC',
-'PirB',
-'Rambutan',
-'RambutanE',
-'RambutanD',
-'RambutanC',
-'RambutanB',
-'KacangTanah',
-'KacangTanahE',
-'KacangTanahD',
-'KacangTanahC',
-'KacangTanahB',
-'Mangga',
-'ManggaE',
-'ManggaD',
-'ManggaC',
-'ManggaB',
-'TerungKeramat',
-'TerungKeramatE',
-'TerungKeramatD',
-'TerungKeramatC',
-'TerungKeramatB',
-'ManggaKeramat',
-'ManggaKeramatE',
-'ManggaKeramatD',
-'ManggaKeramatC',
-'ManggaKeramatB',
+'Melon',
+'Mentimun',
+'Nanas',
+'Pisang',
+'Sakura',
+'Semangka',
+'Strawberry',
+'Tomat',
+'Wortel',
 'BuahNaga',
-'BuahNagaE',
-'BuahNagaD',
-'BuahNagaC',
-'BuahNagaB',
+'Jambu',
+'KacangTanah',
+'Kelapa',
+'Mangga',
+'Nangka',
+'Pepaya',
 'Persik',
-'PersikE',
-'PersikD',
-'PersikC',
-'PersikB',
-'BerryKeramat',
-'BerryKeramatE',
-'BerryKeramatD',
-'BerryKeramatC',
-'BerryKeramatB',
+'Pir',
+'Rambutan',
+'Terung',
+'Tulip',
+'Ubi',
 'AnggurKeramat',
-'AnggurKeramatE',
-'AnggurKeramatD',
-'AnggurKeramatC',
-'AnggurKeramatB',
-'PisangKeramat',
-'PisangKeramatE',
-'PisangKeramatD',
-'PisangKeramatC',
-'PisangKeramatB',
-'TomatKeramat',
-'TomatKeramatE',
-'TomatKeramatD',
-'TomatKeramatC',
-'TomatKeramatB',
-'WortelKeramat',
-'WortelKeramatE',
-'WortelKeramatD',
-'WortelKeramatC',
-'WortelKeramatB',
+'BerryKeramat',
 'LabuKeramat',
-'LabuKeramatE',
-'LabuKeramatD',
-'LabuKeramatC',
-'LabuKeramatB',
+'ManggaKeramat',
+'NanasKeramat',
+'PisangKeramat',
+'TerungKeramat',
+'TomatKeramat',
+'WortelKeramat',
+'Last',
+]
+
+Grade = [
+'',
+'E',
+'D',
+'C',
+'B',
+'A',
+'Last',
 ]
 
 hasil = "/casino_hasil"
 judi = "/casino_FiftyFifty_"
-
 ternak = "/ambilHasil"
 makan = "/beriMakan"
-
-gas = "/sg_gabung_mentimun"
-
-turu = 3
-merge = 0
+mese = '/sg_harvest'
+bot = ['danaudalamhutan', 'KampungMaifamXBot', 'KampungMaifamX4Bot', 'KampungMaifamBot']
+turu = 4
+mer = 0
+gradenum = 0
+panen = '/sg_panen'
 
 async def bentar(w):
     await asyncio.sleep(w)
-    
+
 with TelegramClient(sesi_fil, api_id, api_hash) as client:
-    client.loop.run_until_complete(client.send_message(bot[1], gas))
+    client.loop.run_until_complete(client.send_message(bot[1], panen))
     @client.on(events.NewMessage(incoming=True, from_users=bot[1]))
-    async def handle_chat(event):
-        message = event.raw_text
-        global merge
+    async def handler(event):
+        pesan = event.raw_text
+        global mer
         global idMer
+        global gradenum
             
-        if "Gabungkan 500" in message:
-            idMer = event.id
-            await bentar(0.9)
-            await event.click(text='Gabung 500')
-        
-        elif "untuk mendapat" in message:
-            idMer = event.id
-            await bentar(0.9)
-            await event.click(text='Gabung 15')
-                    
-        if "Berhasil menggabungkan" in message:
-            await bentar(0.9)
-            msg = await client.get_messages(bot[1],ids = idMer)
-            await msg.click(0,2)
+        if "di keranjang buah" in pesan:
+            mer += 1
+            time.sleep(2)
+            await event.respond('/sg_merge_'+mergeList[mer]+Grade[gradenum])
             return
-          
-        if "Kamu tidak memiliki" in message:
-            merge +=1
-            await bentar(turu)
             
-            if merge %5 == 0 :
+        if "Kamu tidak memiliki" in pesan:
+            mer +=1
+            
+            if mer %15 == 0 :
                 await client.send_message(bot[3], hasil)
                 await bentar(turu)
                 await client.send_message(bot[3], judi+str(random.randint(1,2))+"_1e12")
@@ -273,60 +109,79 @@ with TelegramClient(sesi_fil, api_id, api_hash) as client:
                 await bentar(turu)
                 await client.send_message(bot[3], makan)
                 await bentar(turu)
-                await client.send_message(bot[3], "/pfs_AreaClassA_ambilpanen")
-                await bentar(turu)
                 await client.send_message(bot[3], "/pfs_AreaClassS_ambilpanen")
-                await bentar(turu)
-                await client.send_message(bot[3], "/masak_MiniBacon_220")
                 await bentar(turu)
                 await client.send_message(bot[3], "/sg_panen")
                 await bentar(10)
-        
-            if merge %205 == 0 :
-                #await bentar(turu)
-                #print(time.asctime(), ' Furnace & seedMaker')
-                #for furnace in range(1,11):
-                    #ironbar = '/furnace_'+str(furnace)+'_add_confirm'
-                    #await client.send_message(bot[2], ironbar)
-                    #time.sleep(5)
-                    #await client.send_message(bot[2], ironbar)
-                    #time.sleep(5)
-                    #sleep(5)
-                        
-                #for bibit in range(1,2):
-                    #seed = '/seedmaker_'+str(bibit)+'_AnggurKeramatS_confirm'
-                    #await client.send_message(bot[2], seed)
-                    #time.sleep(5)
-                    #await client.send_message(bot[2], seed)
-                    #time.sleep(5)
-                    #sleep(5)
-                await bentar(turu)
-            await client.send_message(bot[1], "/sg_gabung_"+str(plant[merge]))
-        
-        list = len(plant)
-        if merge == (list-1):
+                
             await bentar(turu)
-            await client.send_message(bot[3], "/sg_panen")
-            
-            merge=0
+            await event.respond('/sg_merge_'+mergeList[mer]+Grade[gradenum])
+            return
 
-    @client.on(events.NewMessage(from_users=bot[3]))
-    async def handle_chat(event):
-        message = event.raw_text
-        
-        if "Kamu tidak memiliki cukup energi" in message:
-            print(time.asctime(), 'Capek aseli')
-            await bentar(2)
-            await client.send_message(bot[3], "/makan_RotiBelanda")
-            
-        if "Tidak tidak" in message:
-            print(time.asctime(), 'Kenyang WOI!!!')
-            await bentar(2)
-            await client.send_message(bot[3], "/restore_max_confirm")
-            
+        if 'cukup energi' in pesan:
+            time.sleep(2)
+            await event.respond('/restore_max_confirm')
+            return
 
+        if 'Keranjang buah tidak mencukupi' in pesan:
+            time.sleep(2)
+            await event.respond('/sg_merge_'+mergeList[mer]+Grade[gradenum])
+            return
+            
+        if 'Berhasil memanen' in pesan:
+            time.sleep(2)
+            await event.respond(mese)
+            return
+
+        if 'Tidak ada yang bisa' in pesan:
+            time.sleep(2)
+            await event.respond('/sg_merge_'+mergeList[mer]+Grade[gradenum])
+            return
+
+        if 'dimiliki:' in pesan:
+            idMer = event.id
+            msg = await client.get_messages(bot[1],ids = idMer)
+            time.sleep(1.5)
+            a = pesan.split()
+            b = int(a.index('dimiliki:'))
+            total = int(a[b+1])
+            if total < 500:
+                await msg.click(text="Gabung 15")
+                return
+            elif total >= 500 or total < 1000:
+                await msg.click(text="Gabung 500")
+                return
+            elif total >= 1000 or total < 1500:
+                await msg.click(text="Gabung 1000")
+                return
+            elif total >= 1500:
+                await msg.click(text="Gabung 1500")
+            return
+
+        if 'Berhasil menggabungkan' in pesan:
+            await bentar(0.9)
+            msg = await client.get_messages(bot[1],ids = idMer)
+            await msg.click(0,2)
+            return
+              
+        if mergeList[mer] == mergeList[-1]:
+            gradenum +=1
+            mer = 0
+            print('Yosh Naik Grade!!')
+            time.sleep(2)
+            await event.respond('/sg_merge_'+mergeList[mer]+Grade[gradenum])
+            return
+            
+        if Grade[gradenum] == Grade[-1]:
+            gradenum = 0
+            mer = 0
+            print('Yosh Ulang!!')
+            time.sleep(2)
+            await event.respond(mese)
+            return
 
     client.start()
-    print(time.asctime(), '-', 'Mari nguli')
+    print(time.asctime(), '-', 'Mari menjadi petani')
     client.run_until_disconnected()
-    print(time.asctime(), '-', 'Istirahat dulu capek')
+    print(time.asctime(), '-', 'Kok di stop bang')
+
