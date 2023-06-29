@@ -138,7 +138,14 @@ with TelegramClient(sesi_fil, api_id, api_hash) as client:
             await event.respond('/sg_merge_'+mergeList[mer]+Grade[gradenum])
             return
 
-        if total < 500:
+        if 'dimiliki:' in pesan:
+            idMer = event.id
+            msg = await client.get_messages(bot[1],ids = idMer)
+            time.sleep(1.5)
+            a = pesan.split()
+            b = int(a.index('dimiliki:'))
+            total = int(a[b+1])
+            if total < 500:
                 await msg.click(text="Gabung 15")
                 return
             elif total <= 500 or total < 1000:
