@@ -154,16 +154,15 @@ with TelegramClient(sesi_fil, api_id, api_hash) as client:
             if total < 500:
                 await msg.click(text="Gabung 15")
                 return
-            elif total <= 499 or total < 1000:
+            elif total <= 500 or total < 1000:
                 await msg.click(text="Gabung 500")
                 return
-            elif total <= 999 or total < 1500:
+            elif total <= 1000 or total < 1500:
                 await msg.click(text="Gabung 1000")
                 return
             elif total >= 1500:
                 await msg.click(text="Gabung 1500")
             return
-
 
         if 'Berhasil menggabungkan' in pesan:
             await bentar(0.9)
