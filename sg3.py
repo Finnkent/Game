@@ -148,22 +148,22 @@ with TelegramClient(sesi_fil, api_id, api_hash) as client:
             idMer = event.id
             msg = await client.get_messages(bot[1],ids = idMer)
             time.sleep(1.5)
-            a = event.raw_text
-            b = a.split()
-            c = b.index('dimiliki:')
-            d = b[c+1]
-            if int(d) < 500:
+            a = pesan.split()
+            b = int(a.index('dimiliki:'))
+            total = int(a[b+1])
+            if total < 500:
                 await msg.click(text="Gabung 15")
                 return
-            elif int(d) >= 500 or int(d) < 1000:
+            elif total >= 500 or total < 1000:
                 await msg.click(text="Gabung 500")
                 return
-            elif int(d) >= 1000 or int(d) < 1500:
+            elif total >= 1000 or total < 1500:
                 await msg.click(text="Gabung 1000")
                 return
-            elif int(d) >= 1500:
+            elif total >= 1500:
                 await msg.click(text="Gabung 1500")
             return
+
 
         if 'Berhasil menggabungkan' in pesan:
             await bentar(0.9)
