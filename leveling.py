@@ -64,7 +64,7 @@ with TelegramClient(sesi_file, api_id, api_hash) as client:
             await event.respond(Leveling)
             return
         
-        elif 'Kamu tidak memiliki 3250x' in pesan:
+        elif 'untuk ditanam' in pesan:
             print(time.asctime(), 'Habis bibit')
             time.sleep(2)
             await event.respond(Beli)
