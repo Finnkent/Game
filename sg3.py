@@ -84,7 +84,7 @@ async def bentar(w):
 
 async def mancingddh(client,w):
     while True:
-        await client.send_message(dest[0], "/fish")
+        await client.send_message(bot[0], "/fish")
         await bentar(w)
 
 with TelegramClient(sesi_fil, api_id, api_hash) as client:
