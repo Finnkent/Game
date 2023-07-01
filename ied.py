@@ -23,9 +23,9 @@ def masha2():
     loop = asyncio.new_event_loop()
     asyncio.set_event_loop(loop)
     with TelegramClient(sesi_file, api_id, api_hash) as client:
-        client.loop.run_until_complete(client.send_message('KampungMaifamXBot', mese))
+        client.loop.run_until_complete(client.send_message('KampungMaifamBot', mese))
 
-        @client.on(events.NewMessage(from_users='KampungMaifamXBot'))
+        @client.on(events.NewMessage(from_users='KampungMaifamBot'))
         async def handler(event):
             global item, teks, emoji, butt
             teks = str(event)
