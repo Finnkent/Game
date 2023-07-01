@@ -82,6 +82,11 @@ panen = '/sg_panen'
 async def bentar(w):
     await asyncio.sleep(w)
 
+async def mancingddh(client,w):
+    while True:
+        await client.send_message(dest[0], "/fish")
+        await bentar(w)
+
 with TelegramClient(sesi_fil, api_id, api_hash) as client:
     client.loop.run_until_complete(client.send_message(bot[1], panen))
     @client.on(events.NewMessage(incoming=True, from_users=bot[1]))
@@ -188,6 +193,7 @@ with TelegramClient(sesi_fil, api_id, api_hash) as client:
 
     client.start()
     print(time.asctime(), '-', 'Mari menjadi petani')
+    client.loop.create_task(mancingddh(client,245))
     client.run_until_disconnected()
     print(time.asctime(), '-', 'Istirahat dulu capek')
 
