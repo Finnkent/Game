@@ -25,7 +25,7 @@ usn = 'mochamuk'
 msg = '/buatLelang_MiniBacon_10'
 msg2 = 'Masuk'
 #msg2 = '/buatLelang_MiniBacon_10'
-api_id = 'your_api_id'
-api_hash = 'your_api_hash'
+api_id = '18850178'
+api_hash = '34d2d64d0bb5827789bc7bf7c0d34b69'
 
 send_messages(accounts, lahan, usn, msg, msg2, api_id, api_hash)
