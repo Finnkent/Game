@@ -19,7 +19,7 @@ def send_messages(accounts, lahan, usn, msg, msg2, api_id, api_hash):
         print(f'{asctime()} - Cooldown...')
         sleep(86400)
 
-accounts = list(map(str,range(1,16)))
+accounts = list(map(lambda x: str(x).zfill(2), range(1, 16)))
 lahan = ['BidGroup1']
 usn = 'mochamuk'
 msg = '/buatLelang_MiniBacon_10'
