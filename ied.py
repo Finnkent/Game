@@ -29,7 +29,7 @@ def masha2():
         async def handler(event):
             global item, teks, emoji, butt
             teks = str(event)
-            if 'Forest' in teks:
+            if 'Forest' in teks or 'Hutan' in teks:
                 butt = []
                 for item in teks.split():
                     if 'KeyboardButtonCallback' in item:
@@ -42,7 +42,7 @@ def masha2():
                         return
                 return
                 
-            if 'You get a' in event.raw_text:
+            if 'You get a' in event.raw_text or 'Berhasil mendapatkan' in event.raw_text:
                 butt = []
                 for item in teks.split():
                     if 'KeyboardButtonCallback' in item:
