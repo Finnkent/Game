@@ -22,7 +22,7 @@ def send_messages(accounts, lahan, usn, msg, msg2, api_id, api_hash):
 accounts = list(map(str,range(1,16)))
 lahan = ['BidGroup1']
 usn = 'mochamuk'
-msg = '/endbid'
+msg = '/buatLelang_MiniBacon_10'
 msg2 = 'Masuk'
 #msg2 = '/buatLelang_MiniBacon_10'
 api_id = 'your_api_id'
