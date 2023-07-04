@@ -14,14 +14,14 @@ sesi_file = 'Finnkent'
 
 bot_id = '.'
 
-Masak = 'Bbet 1+22'
+Masak = 'Bbet 5+36'
 
 acak = (
-'1+22',
-'2+22',
-'3+22',
-'4+22',
-'5+22',
+'5+36',
+'5+36',
+'5+36',
+'5+36',
+'5+36',
 )
 
 judi = 0
@@ -39,24 +39,24 @@ with TelegramClient(sesi_file, api_id, api_hash) as client:
         global judi
         
                 
-        if "🚓 Finns sepertinya kamu mencoba melanggar hukum.." in pesan:
+        if "🚓 mocha sepertinya kamu mencoba melanggar hukum.." in pesan:
             print(time.asctime(), pesan)
             await bentar(600)
             await client.send_message(-1001944528171, Masak)
             return
-          
-        #if not from_.bot and 'cuan' in pesan or 'Cuan' in pesan:
-            #print(time.asctime(), pesan)
-            #await bentar(2)
-            #await event.reply('0pay *')
-            #return
         
-        if "🎰 Finns telah bertaruh" in pesan:
+        if "🎰 mocha telah bertaruh" in pesan:
             print(time.asctime(), pesan)
             await bentar(2)
             await client.send_message(-1001944528171, "Bbet "+str(random.choice(acak)))
             return
-          
+
+        elif not from_.bot and 'cuan' in pesan or 'Cuan' in pesan:
+            print(time.asctime(), pesan)
+            await bentar(2)
+            await event.reply('0pay *')
+            return
+        
                 
     client.start() 
     client.run_until_disconnected() 
