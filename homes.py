@@ -15,7 +15,7 @@ dest = ('danaudalamhutan', 'KampungMaifamBot', 'KampungMaifamXBot')
 maling = True
 
 uang = '/eat_HolySnack'
-ch = 'Afterbluesky'
+ch = 'logs_tes'
     
 async def nungguin(w):
    await asyncio.sleep(w)
@@ -35,7 +35,7 @@ async def handler(event):
         
         if  ("Villager's Houses" in pesan) or ("Rumah Warga" in pesan):
             print(time.asctime()+" Kunjungi Rumah Warga ke - ")
-            time.sleep(2)
+            time.sleep(2.3)
             x = pesan.split('/curi')
             file = open("Homes.txt","a+")
             count = 0
@@ -77,9 +77,9 @@ async def handler(event):
             
         if 'Kamu tidak memiliki cukup energi' in pesan:
             print(time.asctime(), 'Habis energi')
-            time.sleep(2)
+            time.sleep(2.3)
             await event.respond('/restore_max_confirm')
-            time.sleep(2)
+            time.sleep(2.3)
             return
           
         if 'Energi berhasil dipulihkan' in pesan:
@@ -95,15 +95,15 @@ async def handler(event):
             
         if 'Apa kamu yakin untuk menggunakan' in pesan:
             print(time.asctime(), 'Sogok polisi dlu')
-            time.sleep(2)
+            time.sleep(2.3)
             await event.click(text="Confirm")
             return
           
-        if 'WonderstoneOfYouth' in pesan or 'Stealestrite' in pesan:
+        if 'Kamu berhasil mencuri' in pesan:
             print('Item sihir nih')
-            time.sleep(2)
+            time.sleep(2.3)
             await client.forward_messages(ch, event.message)
-            time.sleep(4)
+            time.sleep(2.3)
             return
             
 with client:
