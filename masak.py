@@ -10,7 +10,7 @@ sesi_file = input("Mau akun mana = ")
 
 Casino = '/masak_MiniBacon_220'
 bot_id = 'kampungmaifambot'
-ch = ''
+ch = 'PartOfDevins'
 tunggu = 3420
 ternak = '/beliternak_Ayam_Piqucum'
 
