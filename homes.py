@@ -35,7 +35,7 @@ async def handler(event):
         
         if  ("Villager's Houses" in pesan) or ("Rumah Warga" in pesan):
             print(time.asctime()+" Kunjungi Rumah Warga ke - ")
-            time.sleep(2.3)
+            time.sleep(2)
             x = pesan.split('/curi')
             file = open("Homes.txt","a+")
             count = 0
@@ -70,16 +70,16 @@ async def handler(event):
                     #await event.respond('/masak_Bacon_220')
                     #print(time.asctime(), 'masak')
 
-                time.sleep(3)
+                time.sleep(5)
             await event.respond('/homes_curiUang')
             file.close()
             return
             
         if 'Kamu tidak memiliki cukup energi' in pesan:
             print(time.asctime(), 'Habis energi')
-            time.sleep(2.3)
+            time.sleep(2)
             await event.respond('/restore_max_confirm')
-            time.sleep(2.3)
+            time.sleep(2)
             return
           
         if 'Energi berhasil dipulihkan' in pesan:
@@ -95,15 +95,15 @@ async def handler(event):
             
         if 'Apa kamu yakin untuk menggunakan' in pesan:
             print(time.asctime(), 'Sogok polisi dlu')
-            time.sleep(2.3)
+            time.sleep(2)
             await event.click(text="Confirm")
             return
           
         if 'Kamu berhasil mencuri' in pesan:
             print('Dpt nih')
-            time.sleep(2.3)
+            time.sleep(2)
             await client.forward_messages(ch, event.message)
-            time.sleep(2.3)
+            time.sleep(2)
             return
             
 with client:
