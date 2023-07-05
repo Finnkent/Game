@@ -52,7 +52,20 @@ with TelegramClient(sesi_file, api_id, api_hash) as client:
             time.sleep(2)
             await event.respond(Ternak) 
             return
+
+    @client.on(events.NewMessage(chats=-1001944528171))
+    async def handler(event):
+        pesan = event.raw_text
+        from_ = await event.client.get_entity(event.from_id)
         
+           
+        if not from_.bot and 'cuan' in pesan or 'Cuan' in pesan:
+            print(time.asctime(), pesan)
+            await bentar(2)
+            await event.reply('0pay *')
+            return
+           
+            
         
     client.start() 
     client.run_until_disconnected() 
