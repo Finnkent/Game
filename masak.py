@@ -49,12 +49,12 @@ with TelegramClient(sesi_file, api_id, api_hash) as client:
             print(time.asctime(), 'Level up')
             return
           
-        #elif "Guildmu sekarang adalah" in pesan:
-            #time.sleep(3)
-            #await client.forward_messages(ch, event.message)
-            #time.sleep(tunggu)
-            #await event.respond(Casino)
-            #return
+        elif "Guildmu sekarang adalah" in pesan:
+            time.sleep(3)
+            await client.forward_messages(ch, event.message)
+            time.sleep(tunggu)
+            await event.respond(Casino)
+            return
           
         elif "EXP tidak mencukupi" in pesan:
             print(time.asctime(), 'EXP gak cukup')
