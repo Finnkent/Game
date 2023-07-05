@@ -14,7 +14,7 @@ sesi_file = 'Finnkent'
 dest = ('danaudalamhutan', 'KampungMaifamBot', 'KampungMaifamXBot')
 maling = True
 
-uang = '/eat_HolySnack'
+uang = 'Hapus menggunakan Uang'
 ch = 'logs_tes'
     
 async def nungguin(w):
