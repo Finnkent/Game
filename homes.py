@@ -70,7 +70,7 @@ async def handler(event):
                     #await event.respond('/masak_Bacon_220')
                     #print(time.asctime(), 'masak')
 
-                time.sleep(5)
+                time.sleep(2)
             await event.respond('/homes_curiUang')
             file.close()
             return
