@@ -12,6 +12,9 @@ dest =('KampungMaifamXBot')
 Ternak = '/pelihara_BayiBabi_155'
 #restore = '/restore'
 restore = '/restore_max_confirm'
+
+async def bentar(w):
+    await asyncio.sleep(w)
  
 with TelegramClient(sesi_file, api_id, api_hash) as client:
     client.loop.run_until_complete(client.send_message(dest, Ternak))
