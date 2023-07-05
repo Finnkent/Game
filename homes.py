@@ -100,7 +100,7 @@ async def handler(event):
             return
           
         if 'Kamu berhasil mencuri' in pesan:
-            print('Item sihir nih')
+            print('Dpt nih')
             time.sleep(2.3)
             await client.forward_messages(ch, event.message)
             time.sleep(2.3)
