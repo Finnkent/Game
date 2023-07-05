@@ -53,17 +53,18 @@ with TelegramClient(sesi_file, api_id, api_hash) as client:
             await event.respond(Ternak) 
             return
 
-    @client.on(events.NewMessage(chats=-1001944528171))
+    @client.on(events.NewMessage(chats=-1001884850141))
     async def handler(event):
         pesan = event.raw_text
-        from_ = await event.client.get_entity(event.from_id)
-        
+        from_ = await event.client.get_entity(event.from_id)
            
-        if not from_.bot and 'cuan' in pesan or 'Cuan' in pesan:
+
+        if not from_.bot and 'cuan' in pesan or 'Cuan' in pesan and from_.id != 5199147926:
             print(time.asctime(), pesan)
             await bentar(2)
             await event.reply('0pay *')
             return
+
            
             
         
