@@ -51,6 +51,9 @@ for k in bids:
         print(time.asctime(), '-', str(i))
         countdown(615)
         print("Proses selesai")
-        
+
+print(time.asctime(), '----- Selesai -----')
+exit()
+
 client.run_until_disconnected()
 print(time.asctime(), '-', 'Berhenti')
