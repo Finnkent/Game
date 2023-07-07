@@ -17,7 +17,7 @@ def start_voice_chat(group):
 
 @client.on(events.NewMessage(chats=group_id))
 async def handle_message(event):
-    if event.raw_text == join_command and event.sender_id == (await client.get_me()).id:await client.start_voice_chat(group_id)
+    if event.raw_text == join_command and event.sender_id == (await client.get_me()).id:await client.start_call(group_id)
 
 with client:
     client.run_until_disconnected()
