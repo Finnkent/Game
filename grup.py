@@ -37,3 +37,6 @@ name = None
 
 if name == 'main':
     asyncio.run(main())
+
+with client:
+    client.run_until_disconnected()
