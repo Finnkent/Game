@@ -41,7 +41,7 @@ async def handler(event):
             count = 0
             for i in range(1,11):
                 y = x[i].split(' - ')
-                z = y[0].replace('Uang', '/curiTernak')
+                z = y[0].replace('Uang', '/report')
                 #file.write(z+'\n')
                 await event.respond(z)
                 print(time.asctime()+" Masuk Rumah")
@@ -99,7 +99,7 @@ async def handler(event):
             await event.click(text="Confirm")
             return
           
-        if 'Kamu berhasil mencuri' in pesan:
+        if 'Polisi baru saja menangkap' in pesan:
             print('Dpt nih')
             time.sleep(2)
             await client.forward_messages(ch, event.message)
