@@ -13,6 +13,7 @@ sesi_file = input("Mau akun mana = ")
 dest = ('danaudalamhutan', 'KampungMaifamBot', 'KampungMaifamXBot')
 maling = True
 
+ch = 'klonking'
 uang = 'Hapus menggunakan Uang'
     
 async def nungguin(w):
@@ -96,7 +97,13 @@ async def handler(event):
             time.sleep(2)
             await event.click(text="Confirm")
             return
-          
+
+        if 'Kamu berhasil mencuri' in pesan:
+            print('Dpt nih')
+            time.sleep(2)
+            await client.forward_messages(ch, event.message)
+            time.sleep(2)
+            return
             
 with client:
     client.start()
