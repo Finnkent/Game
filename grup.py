@@ -12,16 +12,19 @@ join_command = '/joinvcg'
 async def start_voice_chat():
     await client.send_message(group_id, join_command)
 
+# Event handler untuk pesan baru dalam grup
 @client.on(events.NewMessage(chats=group_id))
 async def handle_message(event):
     if event.raw_text == join_command and event.sender_id == (await client.get_me()).id:
         await client.start_call(group_id)
 
+# Event handler untuk perintah '/mulai'
 @client.on(events.NewMessage(pattern='/mulai', chats=group_id))
 async def handle_start_command(event):
     await event.reply('Mulai...')
     await start_voice_chat()
 
+# Event handler untuk perintah '/keluarvcg'
 @client.on(events.NewMessage(pattern='/keluarvcg', chats=group_id))
 async def handle_exit_command(event):
     # Menggunakan metode leave_call untuk keluar dari voice chat group 
@@ -33,10 +36,5 @@ async def main():
     await client.start()
     await client.run_until_disconnected()
 
-name = None
-
 if name == 'main':
     asyncio.run(main())
-
-with client:
-    client.run_until_disconnected()
