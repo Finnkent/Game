@@ -35,7 +35,7 @@ async def handler(event):
         
         if  ("Villager's Houses" in pesan) or ("Rumah Warga" in pesan):
             print(time.asctime()+" Kunjungi Rumah Warga ke - ")
-            time.sleep(2)
+            time.sleep(3)
             x = pesan.split('/curi')
             file = open("Homes.txt","a+")
             count = 0
@@ -50,7 +50,7 @@ async def handler(event):
                 count+=1
             
                 if count%10==0:
-                    time.sleep(2)
+                    time.sleep(5)
                     await event.respond(uang)
                     print(time.asctime(), 'hapus buron')
                     #time.sleep(2)
@@ -70,7 +70,7 @@ async def handler(event):
                     #await event.respond('/masak_Bacon_220')
                     #print(time.asctime(), 'masak')
 
-                time.sleep(2)
+                time.sleep(5)
             await event.respond('/homes_curiUang')
             file.close()
             return
