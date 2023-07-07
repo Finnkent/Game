@@ -8,7 +8,7 @@ api_id = 18850178
 api_hash = '34d2d64d0bb5827789bc7bf7c0d34b69'
 sesi_file = input('Mau akun mana = ')
 
-Leveling = '/tanamGuild_Wortel_1000'
+Leveling = '/tanamGuild_Wortel_6500'
 Beli = '/beli_Wortel_1e6'
 #Panen = '/KebunGuild_AmbilPanen'
 Panen = '/kebunGuild_PanenSekarang'
@@ -21,7 +21,7 @@ with TelegramClient(sesi_file, api_id, api_hash) as client:
     async def handler(event):
         pesan = event.raw_text
         
-        if 'Sekarang kamu menjadi petani level 81' in pesan:
+        if 'Sekarang kamu menjadi petani level 118' in pesan:
             time.sleep(2)
             print('--Selesai--')
             exit
