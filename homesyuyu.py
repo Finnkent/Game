@@ -106,7 +106,7 @@ async def handler(event):
             return
             
 @client.on(events.NewMessage(from_users=bot[1]))
-    async def handler(event):
+async def handle_chat(event):
         message = event.raw_text
 
         if 'Seseorang bernama' in pesan:
