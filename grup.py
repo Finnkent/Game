@@ -31,7 +31,5 @@ async def handle_exit_command(event):
     await client.leave_call(group_id)
     await event.reply('Keluar dari Voice Chat Group.')
 
-async def main():
-    # Menunggu sampai client siap
-    await client.start()
-    await client.run_until_disconnected()
+client.start()
+client.run_until_disconnected()
