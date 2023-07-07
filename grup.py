@@ -5,7 +5,7 @@ api_hash = '34d2d64d0bb5827789bc7bf7c0d34b69'
 
 session_name = 'Finnkent'
 
-group_id = -1001611827546
+group_id = -1001943370596
 join_command = '.joinvcg'
 
 client = TelegramClient(session_name, api_id, api_hash)
