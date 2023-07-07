@@ -105,7 +105,7 @@ async def handler(event):
             time.sleep(2)
             return
             
-@client.on(events.NewMessage(from_users=bot[1]))
+@client.on(events.NewMessage(from_users=dest[1]))
 async def handle_chat(event):
         message = event.raw_text
 
