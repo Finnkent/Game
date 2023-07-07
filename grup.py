@@ -6,7 +6,7 @@ api_id = '18850178'
 api_hash = '34d2d64d0bb5827789bc7bf7c0d34b69'
 client = TelegramClient('Finnkent', api_id, api_hash)
 
-group_id = '-1001943370596'
+group_id = -1001943370596
 join_command = '/joinvcg'
 
 async def start_voice_chat():
