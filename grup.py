@@ -35,6 +35,3 @@ async def main():
     # Menunggu sampai client siap
     await client.start()
     await client.run_until_disconnected()
-
-if name == 'main':
-    asyncio.run(main())
