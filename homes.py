@@ -50,7 +50,7 @@ async def handler(event):
                 count+=1
             
                 if count%10==0:
-                    time.sleep(5)
+                    time.sleep(3)
                     await event.respond(uang)
                     print(time.asctime(), 'hapus buron')
                     #time.sleep(2)
