@@ -7,7 +7,7 @@ api_hash = '34d2d64d0bb5827789bc7bf7c0d34b69'
 client = TelegramClient('Finnkent', api_id, api_hash)
 
 # Command yang digunakan untuk bergabung ke voice chat
-join_command = '/mulaivcg'
+join_command = '/joinvcg'
 
 
 async def start_voice_chat(group_id):
@@ -17,7 +17,7 @@ async def start_voice_chat(group_id):
 @client.on(events.NewMessage())
 async def handle_message(event):
     if event.raw_text == join_command and event.is_group and event.sender_id == event.sender_id:
-        await client.start_call(event.chat_id)
+        await client.join_call(event.chat_id)
 
 # Event handler untuk perintah '/mulai'
 @client.on(events.NewMessage(pattern='/mulai'))
