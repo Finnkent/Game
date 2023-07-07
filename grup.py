@@ -17,7 +17,8 @@ def start_voice_chat(group):
 
 @client.on(events.NewMessage(chats=group_id))
 async def handle_message(event):
-    if event.raw_text == join_command and event.sender_id == client.get_me().id:
+    me = await client.get_me()
+    if event.raw_text == join_command and event.sender_id == me.id:
         await client.start_voice_chat(group_id)
 
 
