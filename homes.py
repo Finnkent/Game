@@ -35,7 +35,7 @@ async def handler(event):
         
         if  ("Villager's Houses" in pesan) or ("Rumah Warga" in pesan):
             print(time.asctime()+" Kunjungi Rumah Warga ke - ")
-            time.sleep(3)
+            time.sleep(2)
             x = pesan.split('/curi')
             file = open("Homes.txt","a+")
             count = 0
