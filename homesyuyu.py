@@ -112,9 +112,9 @@ async def handle_chat(event):
         if 'Seseorang bernama' in pesan:
             print('Ada yang mau nyuri')
             time.sleep(5)
-            await client.send_message(bot[1],'/aktifkan_sekarang')
+            await client.send_message(dest[1],'/aktifkan_sekarang')
             time.sleep(5)
-            await client.send_message(bot[2],'/aktifkan_sekarang') 
+            await client.send_message(dest[2],'/aktifkan_sekarang') 
             time.sleep(5)
             return
 
