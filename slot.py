@@ -17,6 +17,8 @@ jackpot = 0
 gems = 0
 tiket = 0 
 poin = 0
+jala = 0
+ikan = 0
 skill = 0
 cv = 0
 sk = 0
@@ -42,6 +44,8 @@ with TelegramClient(sesi_file, api_id, api_hash) as client:
             global gems
             global tiket
             global poin 
+            global jala
+            global ikan
             global skill
             global cv
             global sk
@@ -103,6 +107,18 @@ with TelegramClient(sesi_file, api_id, api_hash) as client:
             if '100 PoinSlot' in event.raw_text:
                 poin += 100
                 
+            if '100 UmpanJala' in event.raw_text:
+                jala += 100
+                
+            if '1000 UmpanJala' in event.raw_text:
+                jala += 1000
+            
+            if '2500 PoinIkan' in event.raw_text:
+                ikan += 2500
+                
+            if '25000 PoinIkan' in event.raw_text:
+                ikan += 25000
+            
             if '10000 KemampuanMemancing' in event.raw_text:
                 skill += 10000
                 
@@ -111,7 +127,7 @@ with TelegramClient(sesi_file, api_id, api_hash) as client:
                 
             if '1000000 KemampuanMemancing' in event.raw_text:
                 skill += 1000000
-                
+            
             if '100 🎫Tiket' in event.raw_text:
                 tiket += 100
                 
@@ -210,7 +226,9 @@ with TelegramClient(sesi_file, api_id, api_hash) as client:
 💎 <b>Gem:</b> <i>+{}</i>
 🎫 <b>Tiket:</b> <i>+{}</i>
 🏅 <b>Poin Slot:</b> <i>+{}</i>
-🐟 <b>Kemampuan Memancing:</b> <i>+{}</i>
+🛥 <b>Umpan Jala:</b> <i>+{}</i>
+🎣 <b>Poin Ikan:</b> <i>+{}</i>
+⚓️ <b>Kemampuan Memancing:</b> <i>+{}</i>
 🏵 <b>Carnival Poin:</b> <i>+{}</i>
 🎯 <b>Kemampuan Dart:</b> <i>+{}</i>
 🧌 <b>Action Figure:</b> <i>+{}</i>
@@ -233,6 +251,8 @@ with TelegramClient(sesi_file, api_id, api_hash) as client:
                     gems,
                     tiket,
                     poin,
+                    jala,
+                    ikan,
                     skill,
                     cv,
                     sk,
