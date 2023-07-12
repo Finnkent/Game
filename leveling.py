@@ -21,7 +21,7 @@ with TelegramClient(sesi_file, api_id, api_hash) as client:
     async def handler(event):
         pesan = event.raw_text
         
-        if 'Sekarang kamu menjadi petani level 81' in pesan:
+        if 'Sekarang kamu menjadi petani level 118' in pesan:
             time.sleep(2)
             print('--Selesai--')
             exit
