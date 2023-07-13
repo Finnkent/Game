@@ -10,7 +10,7 @@ bot_id = 'KampungMaifamBot'
 api_id = 18850178
 api_hash = '34d2d64d0bb5827789bc7bf7c0d34b69'
 
-mine = "/spex"
+mine = "/spaceExploration"
 
 loop = asyncio.new_event_loop()
 
