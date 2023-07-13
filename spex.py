@@ -39,9 +39,9 @@ async def script(event): #masukin script di sini
         
     if "Good Job!!" in pesan or "Kerja Bagus!!" in pesan:
         time.sleep(2.5)
-        await event.respond("/spex_WRD2023")
+        await event.respond("/spaceExploration")
     
-    if "WorldRockDay2023" in pesan:
+    if "Kamu tidak memiliki cukup" in pesan:
         time.sleep(2.5)
         await event.respond("/restore")
     
