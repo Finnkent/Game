@@ -8,7 +8,7 @@ sesi_file = input('Akun = ')
 
 space = 'SpaceExploration'
 restore = '/restore'
-bot = 'KampungMaifamX4Bot'
+bot = 'KampungMaifamBot'
 
 with TelegramClient(sesi_file, api_id, api_hash) as client:
         client.loop.run_until_complete(client.send_message(bot, space))
