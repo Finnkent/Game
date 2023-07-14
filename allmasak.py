@@ -7,6 +7,8 @@ loop = asyncio.get_event_loop()
 api_id = 18850178
 api_hash = '34d2d64d0bb5827789bc7bf7c0d34b69'
 
+Masak = '/masak_MiniBacon_220'
+
 akun1 = "04"
 akun2 = "05"
 akun3 = "06"
@@ -21,31 +23,30 @@ client5 = TelegramClient(akun5, api_id, api_hash).start()
 client6 = TelegramClient(akun6, api_id, api_hash).start()
 
 chat = 'kampungmaifambot'
-Masak = '/masak_MiniBacon_220'
 
 @client.on(events.NewMessage(chat))
 async def handler(event):
     
     if "Berhasil memasak" in event.text:
-        sleep(3)
+        sleep(2)
         await event.respond(Masak)
         print(pesan)
         return
         
     elif "Kamu tidak bisa memasak" in event.text:
-        print(time.asctime(), 'istirahat dulu')
-        sleep(3500)
+        print('cooldown')
+        sleep(3420)
         await event.respond(Masak)
         return
  
           
     elif 'Kamu tidak memiliki' in event.text:
-        sleep(3)
+        sleep(2)
         await event.respond('/restore')
         return
                 
     elif 'Energi berhasil' in event.text:
-        sleep(3)
+        sleep(2)
         await event.respond(Masak)
         return
         
@@ -54,24 +55,24 @@ async def handler(event):
 async def handler(event):
     
     if "Berhasil memasak" in event.text:
-        sleep(3)
+        sleep(2)
         await event.respond(Masak)
         return
         
     elif "Kamu tidak bisa memasak" in event.text:
-        print(time.asctime(), 'istirahat dulu')
-        sleep(3500)
+        
+        sleep(3420)
         await event.respond(Masak)
         return
  
           
     elif 'Kamu tidak memiliki' in event.text:
-        sleep(3)
+        sleep(2)
         await event.respond('/restore')
         return
                 
     elif 'Energi berhasil' in event.text:
-        sleep(3)
+        sleep(2)
         await event.respond(Masak)
         return
         
@@ -80,24 +81,24 @@ async def handler(event):
 async def handler(event):
     
     if "Berhasil memasak" in event.text:
-        sleep(3)
+        sleep(2)
         await event.respond(Masak)
         return
         
     elif "Kamu tidak bisa memasak" in event.text:
-        print(time.asctime(), 'istirahat dulu')
-        sleep(3500)
+        print('cooldown')
+        sleep(3420)
         await event.respond(Masak)
         return
  
           
     elif 'Kamu tidak memiliki' in event.text:
-        sleep(3)
+        sleep(2)
         await event.respond('/restore')
         return
                 
     elif 'Energi berhasil' in event.text:
-        sleep(3)
+        sleep(2)
         await event.respond(Masak)
         return
         
@@ -106,24 +107,24 @@ async def handler(event):
 async def handler(event):
     
     if "Berhasil memasak" in event.text:
-        sleep(3)
+        sleep(2)
         await event.respond(Masak)
         return
         
     elif "Kamu tidak bisa memasak" in event.text:
-        print(time.asctime(), 'istirahat dulu')
-        sleep(3500)
+        print('cooldown')
+        sleep(3420)
         await event.respond(Masak)
         return
  
           
     elif 'Kamu tidak memiliki' in event.text:
-        sleep(3)
+        sleep(2)
         await event.respond('/restore')
         return
                 
     elif 'Energi berhasil' in event.text:
-        sleep(3)
+        sleep(2)
         await event.respond(Masak)
         return
         
@@ -132,24 +133,24 @@ async def handler(event):
 async def handler(event):
     
     if "Berhasil memasak" in event.text:
-        sleep(3)
+        sleep(2)
         await event.respond(Masak)
         return
         
     elif "Kamu tidak bisa memasak" in event.text:
-        print(time.asctime(), 'istirahat dulu')
-        sleep(3500)
+        print('cooldown')
+        sleep(3420)
         await event.respond(Masak)
         return
  
           
     elif 'Kamu tidak memiliki' in event.text:
-        sleep(3)
+        sleep(2)
         await event.respond('/restore')
         return
                 
     elif 'Energi berhasil' in event.text:
-        sleep(3)
+        sleep(2)
         await event.respond(Masak)
         return
         
@@ -158,24 +159,24 @@ async def handler(event):
 async def handler(event):
     
     if "Berhasil memasak" in event.text:
-        sleep(3)
+        sleep(2)
         await event.respond(Masak)
         return
         
     elif "Kamu tidak bisa memasak" in event.text:
-        print(time.asctime(), 'istirahat dulu')
-        sleep(3500)
+        print('cooldown')
+        sleep(3420)
         await event.respond(Masak)
         return
  
           
     elif 'Kamu tidak memiliki' in event.text:
-        sleep(3)
+        sleep(2)
         await event.respond('/restore')
         return
                 
     elif 'Energi berhasil' in event.text:
-        sleep(3)
+        sleep(2)
         await event.respond(Masak)
         return
         
