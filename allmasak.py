@@ -21,6 +21,7 @@ client5 = TelegramClient(akun5, api_id, api_hash).start()
 client6 = TelegramClient(akun6, api_id, api_hash).start()
 
 chat = 'kampungmaifambot'
+Masak = '/masak_MiniBacon_220'
 
 @client.on(events.NewMessage(chat))
 async def handler(event):
