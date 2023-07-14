@@ -59,7 +59,7 @@ with TelegramClient(sesi_file, api_id, api_hash) as client:
             dn = me.first_name
             usn = me.username
             
-            if '1900000Qn' in event.raw_text:
+            if '1000000Qn' in event.raw_text:
                 time.sleep(2)
                 await event.respond('/tamanHiburan_TembakTopeng')
                 print('Mulai Dart')
